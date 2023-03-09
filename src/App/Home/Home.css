@@ -1,0 +1,367 @@
+.section {
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+.homeCon {
+    display: flex;
+    font-family: appFont;
+    min-height: 565px;
+}
+
+.homeLeft {
+    flex: 1;
+    padding-top: 40px;
+    min-height: 462px;
+    max-height: 462px;
+    border-bottom: 2px solid #00FF94;
+    border-radius: 95px;
+    height: calc(100% - 90px);
+}
+
+.intro {
+    color: #00FF94;
+    padding-left: 30px;
+}
+
+.myNameCon {
+    padding-left: 85px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.myName {
+    color: whitesmoke;
+    font-size: 80px;
+    margin-left: 28px;
+}
+
+.homeRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+
+}
+
+.resumeCon {
+    position: relative;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
+
+.resume {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    color: #00FF94;
+    position: absolute;
+    bottom: 28%;
+    right: 28%;
+    cursor: pointer;
+}
+
+.resume:hover {
+    background-color: #00FF94;
+    color: black;
+    transition: 2s;
+}
+
+
+
+.portfolioCon {
+    font-family: appFont;
+    min-height: 884px;
+}
+
+.portfolioHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.headWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.headWrap {
+    margin: 0;
+    display: flex;
+    color: #00FF94;
+}
+
+.portfolioHead {
+    color: whitesmoke;
+    font-size: 56px;
+    margin: 0;
+}
+
+.closeTag {
+    justify-content: flex-end;
+}
+
+.portfolioContent{
+    display: flex;
+    margin-top: 25px;
+}
+
+.portLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.projectCon{
+    position: relative;
+}
+
+.projectConCh{
+    position:absolute;
+}
+
+
+@keyframes projectMove {
+    from {transform: scale(1, 1); opacity: 1;}
+    to {transform: scale(1.5, 1.5); opacity: 0;}
+  }
+
+.projectCon0{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    animation-name: projectMove; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+
+.projectCon1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    animation-name: projectMove; 
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+  
+}
+
+.projectCon2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    background-image: url(../../Assets//portfolio.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #0c0c0c;
+}   
+
+.portRight{
+    flex: 1;
+    
+}
+.descWrap{
+    color: #00FF94;
+
+}
+.descHF{
+    color: #00FF94;
+    margin-left: 25px;
+}
+
+.descF{
+    margin-bottom: 10px;
+}
+
+.descH{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.descBody{
+    padding-right: 190px;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-left: 25px;
+}
+
+.swipbarCon{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.swipbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bar{
+    width: 600px;
+    height: 5px;
+    background-color: #00FF94;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+.navBtn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00FF94;
+    font-size: 45px;
+    transform: scale(1,1);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.navBtn:hover{
+
+    transform: scale(1.3,1.3);
+    transition: 2s;
+}
+
+.skillsCon{
+    font-family: appFont;
+    margin-top: 12px;
+    height: 100vh;
+    min-height: 643px;
+}
+
+.skillsHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.skillsContent{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.skills{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.skillsEnd{
+    align-items: flex-end;
+}
+
+.skillsStart{
+    align-items: flex-start;
+}
+
+.skillsCenter{
+    align-items: center;
+}
+
+
+
+.skillWrap{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #00FF94;
+    border-radius: 50%;
+    animation-name: skillsMove; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+.pMargin{
+    margin: 0;
+    text-align: center;
+}
+@keyframes skillsMove {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.2,1.2);}
+    100% {transform: scale(1,1);}
+  }
+
+.contactCon{
+    margin-top: 4px;
+    font-family: appFont;
+}
+.contactHeader{
+    display: flex;
+    justify-content: center;
+    font-family: appFont;
+}
+
+.contactContent{
+    height: 500px;
+}
+
+.contactBox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+   margin: 10px;
+    display: flex;
+}
+
+.contactWrap{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #00FF94;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.contactWrapSmall{
+    width: 120px;
+    height: 120px;
+    margin-top: 186px;
+}
+
+.contactlinkden{
+    margin-bottom: 146px;
+}
+
+.contactgmail{
+    margin-top: 48px;
+    width: 130px;
+    height: 130px;
+}
+
+.contactWrap:hover{
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
+.gmailId{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}

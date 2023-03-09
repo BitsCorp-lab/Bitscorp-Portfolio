@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Home from "./App/Home/Home";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [showPortf, setShowPortf] = useState(false);
+  useEffect(() => {
+    const width = window.innerWidth;
+    if (width >= 1208) {
+      setShowPortf(true);
+    }
+  }, []);
+
+  window.addEventListener("resize", function () {
+    const width = window.innerWidth;
+    if (width >= 1208) {
+      setShowPortf(true);
+    } else {
+      setShowPortf(false);
+    }
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {showPortf ? (
+        <Home />
+      ) : (
+        <>
+          <div
+            style={{
+              textAlign: "center",
+              color: "whitesmoke",
+              fontFamily: "appFont",
+              fontSize: "20px",
+            }}
+          >
+            Please increase window size and refresh
+          </div>
+        </>
+      )}
+    </>
   );
 }
 

@@ -1,0 +1,32 @@
+.navbar{
+    color: #00FF94;
+    font-family: appFont;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.compnay{
+    font-size: 28px;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.navEle{
+    margin-right: 25px;
+}
+
+.navHover{
+    transition: 1s;
+    padding: 7px;
+}
+
+.navHover:hover{
+    border: 1px solid #00FF94;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 1s;
+}
+
