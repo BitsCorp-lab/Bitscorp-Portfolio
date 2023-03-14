@@ -4,6 +4,7 @@
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    padding-right: 30px;
 }
 .compnay{
     font-size: 28px;

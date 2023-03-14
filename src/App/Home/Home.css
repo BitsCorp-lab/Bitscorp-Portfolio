@@ -1,12 +1,14 @@
 .section {
     width: 100%;
-    height: calc(100vh - 55px);
+   height: 100vh;
 }
 
 .homeCon {
     display: flex;
     font-family: appFont;
     min-height: 565px;
+    align-items: center;
+    justify-content: center;
 }
 
 .homeLeft {
@@ -77,6 +79,10 @@
 .portfolioCon {
     font-family: appFont;
     min-height: 884px;
+    flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .portfolioHeader {
@@ -241,6 +247,12 @@
     margin-top: 12px;
     height: 100vh;
     min-height: 643px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
 }
 
 .skillsHeader{
@@ -252,6 +264,7 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 60px;
+    width: 100%;
 }
 
 .skills{
@@ -302,6 +315,10 @@
 .contactCon{
     margin-top: 4px;
     font-family: appFont;
+    flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .contactHeader{
     display: flex;

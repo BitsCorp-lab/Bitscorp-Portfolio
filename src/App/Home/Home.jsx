@@ -62,7 +62,7 @@ const Home = () => {
       hideEmail();
     }
     if (socialName === "resume") {
-      window.open("https://drive.google.com/file/d/1mz3Su77hL7c3ftS1EKZ3oGmYL_G95CBg/view?usp=share_link")
+      window.open("https://drive.google.com/file/d/1h7b22drKq50vT_ohIUMV5ky9f72-wcWa/view?usp=share_link")
     }
   };
   return (
